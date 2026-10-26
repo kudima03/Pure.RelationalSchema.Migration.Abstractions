@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.0-preview.0.1.0] - 2026-10-26
+
 ### Added
 
 - `IColumnMapping` and `ITableMapping`, moved from `Pure.RelationalSchema.Storage.PostgreSQL.Migration` so that migrations can be described without a storage dependency.
