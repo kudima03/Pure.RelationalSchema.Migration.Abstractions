@@ -6,6 +6,7 @@
     <LangVersion>latest</LangVersion>
     <EnablePackageValidation>true</EnablePackageValidation>
     <IsAotCompatible>true</IsAotCompatible>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
     <PackageId>Pure.RelationalSchema.Migration.Abstractions</PackageId>
@@ -16,6 +17,9 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageProjectUrl>https://github.com/kudima03/Pure.RelationalSchema.Migration.Abstractions</PackageProjectUrl>
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Pure.RelationalSchema.Abstractions" Version="1.2.0" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="../../README.md" Pack="true" PackagePath="/" />
   </ItemGroup>
