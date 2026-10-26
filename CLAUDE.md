@@ -36,7 +36,7 @@ This is an **interfaces-only NuGet library**: no implementations, no tests. Ever
 
 **Multi-targeting:** net8.0, net9.0, net10.0. All interfaces must remain AOT-compatible (`IsAotCompatible=true`).
 
-**Package validation:** `EnablePackageValidation = true`. There is no `PackageValidationBaselineVersion` until the first release. Set it afterwards; breaking API changes then fail the build.
+**Package validation:** `EnablePackageValidation = true`. `PackageValidationBaselineVersion` is the last published version; breaking API changes against it fail the build. Bump it after each release.
 
 **Publishing:** triggered by pushing a semver tag matching `*.*.*`. The tag name becomes the `PackageVersion`. Packages are published to both GitHub Packages and NuGet.org.
 
