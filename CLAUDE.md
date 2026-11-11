@@ -34,7 +34,7 @@ This is an **interfaces-only NuGet library**: no implementations, no tests. Ever
 
 **Documentation:** `GenerateDocumentationFile` is on, so a public type or member without an XML doc comment fails the build (CS1591 under `-warnaserror`). The XML docs ship in the package.
 
-**Multi-targeting:** net8.0, net9.0, net10.0. All interfaces must remain AOT-compatible (`IsAotCompatible=true`).
+**Multi-targeting:** net8.0, net9.0, net10.0, net11.0. All interfaces must remain AOT-compatible (`IsAotCompatible=true`).
 
 **Package validation:** `EnablePackageValidation = true`. `PackageValidationBaselineVersion` is the last published version; breaking API changes against it fail the build. Bump it after each release.
 
